@@ -10,18 +10,6 @@ class RoleMiddleware
 {
     /**
      * Handle an incoming request.
-<<<<<<< HEAD
-     *@param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
-     */
-    public function handle(Request $request, Closure $next,$role){
-        if(auth()->check() && auth()->user()->role === $role){
-            return $next($request);
-        }
-    
-        abort(403, 'acesso nao autorizado');
-}
-}
-=======
      *
      * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
@@ -36,4 +24,3 @@ class RoleMiddleware
    
     }
 
->>>>>>> eb051021f15918989e5f5574ee886f298795f5f5
